@@ -699,7 +699,10 @@ ul {
 }
 
 .logo a {
-  display: inline-block;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3px;
+  font-weight: 800;
 }
 
 .logo a:hover, .logo a:focus, .logo a:active {
@@ -5573,6 +5576,27 @@ header {
   color: #f27021;
 } 
 
+a[aria-label="apidis"] {
+  display: flex;
+  align-items: center;
+  border: 1px solid #1B2037;
+  border-radius: 30px;
+  padding: 10px 15px;
+  color: #1B2037!important;
+}
+
+a[aria-label="apidis"]::before {
+  font: var(--fa-font-solid);
+  content: '\f120';
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+a:hover[aria-label="apidis"] {
+  background-color: #1B2037!important;
+  color: #fff!important;
+}
+
 a[aria-label="faq"] {
   display: flex;
   align-items: center;
@@ -6044,10 +6068,6 @@ button[aria-label="Ontvolgen"]::before {
   color: #F27021;
 }
 
-.request_ticket_form_id {
-  display: none;
-}
-
 .formHeader {
   margin-bottom: 0.335em;
 }
@@ -6409,7 +6429,7 @@ a.pb-btn::after {
 
 .top-nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 100%;
   max-width: 1160px;

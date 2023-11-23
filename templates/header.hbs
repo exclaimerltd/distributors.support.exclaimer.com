@@ -41,7 +41,7 @@
     {{/if}}
 
     <div class="user-menu">
-      <a href="{{page_path 'help_center'}}/requests/new?ticket_form_id=4459467190557" class="btn" aria-label="raiseticket">{{t 'submit_a_request'}}</a>
+      <a href="{{page_path 'help_center'}}/requests/new" class="btn" aria-label="raiseticket">{{t 'submit_a_request'}}</a>
       {{#unless signed_in}}
         {{#link "sign_in" class="sign-in"}}
           <i class="fa-thin fa-circle-user"></i>
@@ -79,7 +79,7 @@
   <div class="header header-container">
     <div class="logo">
       {{#link 'help_center'}}
-        <img src="{{asset 'logo.png'}}" alt="{{t 'home_page' name=help_center.name}}" />
+        <img src="{{asset 'logo.png'}}" alt="{{t 'home_page' name=help_center.name}}" />Distributors
         {{!-- {{#if settings.show_brand_name}}
           <span aria-hidden="true">{{help_center.name}}</span>
         {{/if}} --}}
@@ -88,9 +88,7 @@
     <div class="nav-wrapper-desktop">
       <nav class="user-nav" id="user-nav">
         <ul class="user-nav-list">
-          <li><a href="{{page_path 'help_center'}}/sections/14953980230813" class="btn" aria-label="videoLib">{{ dc 'kb_videoLib' }}</a></li>
-          <li><a href="{{page_path 'help_center'}}/sections/9982628913437" class="btn" aria-label="whatsNew">{{ dc 'kb_whatsnew' }}</a></li>
-          <li><a href="{{page_path 'help_center'}}/sections/9128956898077" class="btn" aria-label="faq">{{ dc 'kb_faq' }}</a></li>
+          <li><a href="{{page_path 'help_center'}}/sections/13441010835485" class="btn" aria-label="apidis">{{ dc 'kb_apidis' }}</a></li>
           {{!-- <li>{{link 'community'}}</li> --}}
         </ul>
       </nav>
